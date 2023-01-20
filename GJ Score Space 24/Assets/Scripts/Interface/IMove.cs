@@ -5,4 +5,5 @@ using UnityEngine;
 public interface IMove
 {
     public void Move();
+    public IReturnerVector ReturnerVector { get; set; }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class GetterStat<T> : MonoBehaviour where T : PlayerStat
+public abstract class GetterStat<T> : MonoBehaviour where T : Stat
 {
-   protected abstract T PlayerStat { get; set; }
+   protected abstract T Stat { get; set; }
 }

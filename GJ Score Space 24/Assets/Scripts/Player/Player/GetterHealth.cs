@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class GetterHealth : GetterStat<HealthStat>
 {
-    [field: SerializeField] protected override HealthStat PlayerStat { get; set; }
-    public Health GetHealth() => new Health(PlayerStat.Health);
+    [field: SerializeField] protected override HealthStat Stat { get; set; }
+    public Health GetHealth() => new Health(Stat.Health);
 }
