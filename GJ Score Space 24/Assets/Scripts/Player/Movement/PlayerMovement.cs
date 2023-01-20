@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : IMove
 {
-    private readonly float _speed;
     private readonly Rigidbody2D _rigidbody2D;
-    public PlayerMovement(Rigidbody2D rigidbody2D, float speed)
+    private readonly IReturnerVector _returnerVector;
+    public PlayerMovement(Rigidbody2D rigidbody2D, IReturnerVector returnerVector)
     {
         _rigidbody2D = rigidbody2D;
-        _speed = speed;
+        _returnerVector = returnerVector;
     }
+
+    public void Move() => _rigidbody2D.velocity = _returnerVector.ReturnVector();
 }

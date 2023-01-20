@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IMove
+public abstract class PlayerStat 
 {
-    public void Move();
+    
 }

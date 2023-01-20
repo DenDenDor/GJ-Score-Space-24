@@ -11,4 +11,8 @@ public class Player : MonoBehaviour
         _move = move;
         _health = health;
     }
+    private void FixedUpdate()
+    {
+        _move?.Move();
+    }
 }
