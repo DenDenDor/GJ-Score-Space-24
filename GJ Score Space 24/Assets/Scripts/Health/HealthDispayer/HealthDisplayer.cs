@@ -6,12 +6,21 @@ using UnityEngine.UI;
 public class HealthDisplayer : MonoBehaviour
 {
     private IHavingHealth _havingHealth;
+    [SerializeField] private Image _healthBar;
     private void Awake()
     {
         _havingHealth = GetComponent<IHavingHealth>();
     }
     private void Start()
     {
-       // _havingHealth.Health?
+        _havingHealth.Health.OnChangeHealth += DisplayHealth;
+    }
+    private void DisplayHealth()
+    {
+        _healthBar.DivideImageBar(_havingHealth.Health.MaxHealth,_havingHealth.Health.CurrentHealth);
+    }
+    private void OnDisable()
+    {
+        _havingHealth.Health.OnChangeHealth -= DisplayHealth;
     }
 }

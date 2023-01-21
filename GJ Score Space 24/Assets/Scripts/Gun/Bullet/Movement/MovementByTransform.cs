@@ -15,7 +15,6 @@ public class MovementByTransform : IMove
 
     public void Move()
     {
-        Debug.Log("HAH");
         _currentTransform.Translate(ReturnerVector.ReturnVector() * Time.deltaTime);
     }
 }

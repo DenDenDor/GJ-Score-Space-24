@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Stat>k__BackingField:
-    <Health>k__BackingField: 3
+    <Health>k__BackingField: 7
 --- !u!50 &1289099439003298279
 Rigidbody2D:
   serializedVersion: 4

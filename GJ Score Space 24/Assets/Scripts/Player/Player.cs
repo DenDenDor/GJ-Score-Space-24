@@ -1,16 +1,16 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IHavingHealth
 {
     private IMove _move;
     private IRotation _rotation;
-    private Health _health;
-    
+    public Health Health { get; set; }
+
     public void Initialize(IMove move, IRotation rotation, Health health)
     {
         _move = move;
         _rotation = rotation;
-        _health = health;
+        Health = health;
     }
     
     private void FixedUpdate()
