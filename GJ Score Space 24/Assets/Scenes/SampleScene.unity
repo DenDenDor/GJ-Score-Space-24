@@ -347,6 +347,7 @@ GameObject:
   - component: {fileID: 2107112684}
   - component: {fileID: 2107112683}
   - component: {fileID: 2107112682}
+  - component: {fileID: 2107112687}
   - component: {fileID: 2107112681}
   - component: {fileID: 2107112680}
   m_Layer: 0
@@ -392,6 +393,7 @@ MonoBehaviour:
   _player: {fileID: 2107112684}
   _getterHealth: {fileID: 2107112683}
   _getterMove: {fileID: 2107112682}
+  _getterRotation: {fileID: 2107112687}
 --- !u!114 &2107112682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -501,3 +503,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2107112687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107112679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a860731a7955e040bc9950c300904bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Stat>k__BackingField:
+    <Offset>k__BackingField: 270
