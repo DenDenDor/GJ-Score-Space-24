@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8004074078564494794}
   - component: {fileID: 8004074078564494795}
   - component: {fileID: 8004074078564494788}
+  - component: {fileID: 2287415200948488324}
   m_Layer: 0
   m_Name: RangeEnemy
   m_TagString: Untagged
@@ -188,6 +189,32 @@ MonoBehaviour:
     <Self>k__BackingField: {fileID: 8004074078564494797}
     <Offset>k__BackingField: 270
     <Target>k__BackingField: {fileID: 0}
+--- !u!61 &2287415200948488324
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8004074078564494789}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &2333000672733806445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -257,21 +284,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4850181024277119660, guid: 430a4ebf3ec5e574b9c2daeb6d3e1a5b, type: 3}
   m_PrefabInstance: {fileID: 2333000672733806445}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5142435155394978027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7146990722026798529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59d2f2b5c4eef04c96ab0f7b5a45058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gun: {fileID: 7146990722026798533}
-  _getterRotation: {fileID: 2726907835594419203}
-  _getterShooting: {fileID: 7146990722026798535}
 --- !u!114 &2726907835594419203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +300,21 @@ MonoBehaviour:
     <Self>k__BackingField: {fileID: 7146990722026798528}
     <Offset>k__BackingField: 270
     <Target>k__BackingField: {fileID: 0}
+--- !u!114 &5142435155394978027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7146990722026798529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59d2f2b5c4eef04c96ab0f7b5a45058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gun: {fileID: 7146990722026798533}
+  _getterRotation: {fileID: 2726907835594419203}
+  _getterShooting: {fileID: 7146990722026798535}
 --- !u!114 &7146990722026798533 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4850181024277119656, guid: 430a4ebf3ec5e574b9c2daeb6d3e1a5b, type: 3}

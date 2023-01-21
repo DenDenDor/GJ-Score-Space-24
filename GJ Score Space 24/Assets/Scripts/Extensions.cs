@@ -12,6 +12,7 @@ public static class Extensions
      fillValue /= biggerValue;
     image.fillAmount = fillValue;
     }
+    public static bool IsNegative(this float number) => number < 0;
     public static void TriggerEntity<T>(this Collider2D other,Action<T> OnAction) where T : MonoBehaviour
     {
         if (other.TryGetComponent<T>(out T item))

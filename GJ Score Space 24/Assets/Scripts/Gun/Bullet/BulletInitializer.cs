@@ -5,10 +5,10 @@ using UnityEngine;
 public class BulletInitializer : MonoBehaviour
 {
     [SerializeField] private Bullet _bullet;
-    [SerializeField] private GetterRotation _getterRotation;
     [SerializeField] private GetterBulletMovement _getterBulletMovement;
+    [SerializeField] private GetterDamage _getterDamage;
     private void Awake()
     {
-        _bullet.Initialize(_getterBulletMovement.GetMove());
+        _bullet.Initialize(_getterBulletMovement.GetMove(), _getterDamage.GetReturnerHealth());
     }
 }
