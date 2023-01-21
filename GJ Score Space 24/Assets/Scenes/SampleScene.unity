@@ -134,6 +134,9 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420035}
+  - component: {fileID: 519420034}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -208,6 +211,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fefc67e590b6b344b8a322437c389029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _movableCamera: {fileID: 519420035}
+  _getterCameraStat: {fileID: 519420034}
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d688be32cb9296429b84e662c04000a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Stat>k__BackingField:
+    <Speed>k__BackingField: 0.05
+    <Target>k__BackingField: {fileID: 8887985649136801148}
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455d49b07c37dd340941171d26fd7ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &538132393 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7345324736527409324, guid: f3ef6ccadf28d0d4b82d450fc44145f9, type: 3}
@@ -294,11 +338,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 330750566656307482, guid: 5eeb7584b7c3b1045af41ea8b1800ebc, type: 3}
+      propertyPath: <Stat>k__BackingField.<Target>k__BackingField
+      value: 
+      objectReference: {fileID: 8887985649136801148}
     - target: {fileID: 1606092664003081514, guid: 5eeb7584b7c3b1045af41ea8b1800ebc, type: 3}
       propertyPath: <Stat>k__BackingField.<Target>k__BackingField
       value: 
       objectReference: {fileID: 8887985649136801148}
     - target: {fileID: 2726907835594419203, guid: 5eeb7584b7c3b1045af41ea8b1800ebc, type: 3}
+      propertyPath: <Stat>k__BackingField.<Target>k__BackingField
+      value: 
+      objectReference: {fileID: 8887985649136801148}
+    - target: {fileID: 4492998333470639273, guid: 5eeb7584b7c3b1045af41ea8b1800ebc, type: 3}
       propertyPath: <Stat>k__BackingField.<Target>k__BackingField
       value: 
       objectReference: {fileID: 8887985649136801148}

@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovementByTransform : IMove
+public class MovementByTranslate : IMove
 {
     public IReturnerVector ReturnerVector { get; set; }
     private Transform _currentTransform;
 
-    public MovementByTransform(Transform currentTransform, IReturnerVector returnerVector)
+    public MovementByTranslate(Transform currentTransform, IReturnerVector returnerVector)
     {
         _currentTransform = currentTransform;
         ReturnerVector = returnerVector;

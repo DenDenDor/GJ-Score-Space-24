@@ -9,5 +9,5 @@ public class ReturnerControllableVector : IReturnerVector
     {
         Speed = speed;
     }
-    public Vector2 ReturnVector() => new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Speed;
+    public Vector3 ReturnVector() => new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Speed;
 }

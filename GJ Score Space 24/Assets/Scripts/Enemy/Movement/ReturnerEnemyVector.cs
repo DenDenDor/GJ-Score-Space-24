@@ -21,7 +21,7 @@ public class ReturnerEnemyVector : IReturnerVector
         _runOutDistance = runOutDistance;
     }
     
-    public Vector2 ReturnVector()
+    public Vector3 ReturnVector()
     {
         var vector = _target.position - _self.position;
         var direction = vector.normalized;

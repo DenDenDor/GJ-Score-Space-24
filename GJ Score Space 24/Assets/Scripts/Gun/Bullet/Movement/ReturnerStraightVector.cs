@@ -11,5 +11,5 @@ public class ReturnerStraightVector : IReturnerVector
         Speed = speed;
     }
 
-    public Vector2 ReturnVector() => Vector2.right * Speed;
+    public Vector3 ReturnVector() => Vector2.right * Speed;
 }

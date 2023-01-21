@@ -5,5 +5,5 @@ using UnityEngine;
 public class GetterBulletMovement : GetterStat<TransformMovementStat>
 {
     [field:SerializeField] protected override TransformMovementStat Stat { get; set; }
-    public IMove GetMove() => new MovementByTransform(transform, new ReturnerStraightVector(Stat.Speed));
+    public IMove GetMove() => new MovementByTranslate(transform, new ReturnerStraightVector(Stat.Speed));
 }

@@ -10,7 +10,6 @@ public class WavePart
     public WavePart(Enemy prefab, int count)
     {
         _prefab = prefab;
-
         Count = count;
     }
 

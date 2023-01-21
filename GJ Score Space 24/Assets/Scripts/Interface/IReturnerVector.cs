@@ -5,5 +5,5 @@ using UnityEngine;
 public interface IReturnerVector 
 {
     public float Speed { get; set; }
-    public Vector2 ReturnVector();
+    public Vector3 ReturnVector();
 }
