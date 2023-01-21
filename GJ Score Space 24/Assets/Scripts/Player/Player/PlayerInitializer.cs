@@ -14,6 +14,10 @@ public class PlayerInitializer : MonoBehaviour
     private void Awake()
     {
         _getterAttack = GetComponent<IGetterAttack>();
-        _player.Initialize(_getterMove.GetMove(), _getterHealth.GetHealth(), _getterAttack.GetAttack());
+        Initialize(_getterHealth.GetHealth());
+    }
+    public void Initialize(IHealth health)
+    {
+        _player.Initialize(_getterMove.GetMove(),health, _getterAttack.GetAttack());
     }
 }

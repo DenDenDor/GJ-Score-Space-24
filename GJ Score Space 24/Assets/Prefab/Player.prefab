@@ -134,6 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c781190283b460a4e99400246010da3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "<Changing\u0421haracteristicStat>k__BackingField":
+    <FactorOfChangingCharacteristic>k__BackingField: 1.2
   <Stat>k__BackingField:
     <Speed>k__BackingField: 4
     <Rigidbody2D>k__BackingField: {fileID: 8887985647164746131}
@@ -239,6 +241,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab9f458d155580f4d89ee07510eb4795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "<Changing\u0421haracteristicStat>k__BackingField":
+    <FactorOfChangingCharacteristic>k__BackingField: 1.2
   <Stat>k__BackingField:
     <Bullet>k__BackingField: {fileID: 5143893616387450327, guid: b78fc996dfa480d44a9662accf111ace, type: 3}
     <FireRate>k__BackingField: 600
