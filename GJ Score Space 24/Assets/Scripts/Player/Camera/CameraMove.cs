@@ -18,13 +18,10 @@ public class CameraMove : IReturnerVector
     private float GetPlayerPosiotion(float position, float playerPositon, float velocity) => Mathf.SmoothDamp(position, playerPositon, ref velocity, _speed);
     public Vector3 ReturnVector()
     {
-         
-          Vector3 vector =  new Vector3
+        return new Vector3
         (GetPlayerPosiotion(_currentTransform.position.x, _playerTarget.position.x, _velocity.x),
          GetPlayerPosiotion(_currentTransform.position.y, _playerTarget.position.y, _velocity.y),
          _currentTransform.position.z);
-        Debug.Log(vector + " _= - " + _currentTransform.position + " player: " + _playerTarget.position);
-        return vector;
     }
 
 }

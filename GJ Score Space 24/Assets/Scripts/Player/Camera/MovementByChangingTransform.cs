@@ -14,7 +14,6 @@ public class MovementByChangingTransform : IMove
 
     public void Move()
     {
-        Debug.Log("COOL!");
         _currentTranform.position = ReturnerVector.ReturnVector();
     }
 }
