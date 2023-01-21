@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public abstract class Bullet : MonoBehaviour
 {
     private IMove _move;
     private IReturnerHealth _returnerHealth;
@@ -17,11 +17,13 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent<IHavingHealth>(out IHavingHealth havingHealth))
+        (bool, IHavingHealth) isTrigger = IsTrigger(collision);
+        if (isTrigger.Item1)
         {
-            IAttack attack = new MiddleAttack(havingHealth,_returnerHealth);
+            IAttack attack = new AttackByTrigger(isTrigger.Item2,_returnerHealth);
             attack.Attack();
             Destroy(gameObject);
         }
     }
+    protected abstract (bool,IHavingHealth) IsTrigger(Collider2D collision); 
 }

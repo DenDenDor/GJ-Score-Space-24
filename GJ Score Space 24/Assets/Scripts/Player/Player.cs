@@ -3,19 +3,20 @@ using UnityEngine;
 public class Player : MonoBehaviour, IHavingHealth
 {
     private IMove _move;
-    private IRotation _rotation;
-    public Health Health { get; set; }
-
-    public void Initialize(IMove move, IRotation rotation, Health health)
+    public IHealth Health { get; set; }
+    private IAttack _attack;
+    public void Initialize(IMove move, IHealth health, IAttack attack)
     {
         _move = move;
-        _rotation = rotation;
         Health = health;
+        _attack = attack;
     }
-    
+    private void Update()
+    {
+        _attack?.Attack();
+    }
     private void FixedUpdate()
     {
         _move?.Move();
-        _rotation?.Rotate();
     }
 }

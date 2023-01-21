@@ -1,13 +1,8 @@
 ﻿using UnityEngine;
 
-public class EnemyGunInitializer : MonoBehaviour
+public class EnemyGunInitializer : MonoBehaviour, IGetterAttack
 {
-    [SerializeField] private Gun _gun;
     [SerializeField] private GetterEnemyRotation _getterRotation;
-    [SerializeField] private GetterShooting _getterShooting;
-
-    private void Awake()
-    {
-        _gun.Initialize(_getterRotation.GetRotation(),_getterShooting.GetAttack());
-    }
+    [SerializeField] private GetterEnemyShooting _getterShooting;
+    public IAttack GetAttack() => new Gun(_getterRotation.GetRotation(), _getterShooting.GetAttack());
 }

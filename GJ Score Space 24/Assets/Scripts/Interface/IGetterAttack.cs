@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IHavingHealth
+public interface IGetterAttack
 {
-    public IHealth Health { get; set; }
+    public IAttack GetAttack();
 }

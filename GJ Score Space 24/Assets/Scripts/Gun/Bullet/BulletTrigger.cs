@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IHavingHealth
+public class BulletTrigger : MonoBehaviour
 {
-    public IHealth Health { get; set; }
 }

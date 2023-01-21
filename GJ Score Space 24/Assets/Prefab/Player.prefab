@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: 3250996749304338514}
   - component: {fileID: 7880188229674769732}
   - component: {fileID: 6990637230942979471}
+  - component: {fileID: 5265756462286289626}
+  - component: {fileID: 7380532261143007391}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -118,7 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Stat>k__BackingField:
-    <Health>k__BackingField: 3
+    <Health>k__BackingField: 8
+    <ReloadTime>k__BackingField: 750
 --- !u!114 &8887985647164746129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,7 +152,6 @@ MonoBehaviour:
   _player: {fileID: 8887985647164746135}
   _getterHealth: {fileID: 8887985647164746128}
   _getterMove: {fileID: 8887985647164746129}
-  _getterRotation: {fileID: 3250996749304338514}
 --- !u!50 &8887985647164746131
 Rigidbody2D:
   serializedVersion: 4
@@ -197,6 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 309a64c3af808f34e9001ed6cf744060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _getterHealth: {fileID: 8887985647164746128}
   _healthBar: {fileID: 0}
 --- !u!61 &6990637230942979471
 BoxCollider2D:
@@ -224,6 +227,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5265756462286289626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8887985647164746140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9f458d155580f4d89ee07510eb4795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Stat>k__BackingField:
+    <Bullet>k__BackingField: {fileID: 5143893616387450327, guid: b78fc996dfa480d44a9662accf111ace, type: 3}
+    <FireRate>k__BackingField: 600
+    <ShootPoint>k__BackingField: {fileID: 8887985648432468463}
+    <Gun>k__BackingField: {fileID: 8887985647396740986}
+--- !u!114 &7380532261143007391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8887985647164746140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724f333910fd41c40a855b1a3f107d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _getterRotation: {fileID: 2747735439246784749}
+  _getterShooting: {fileID: 5265756462286289626}
 --- !u!1001 &4041763145498926551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -231,6 +265,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8887985647164746133}
     m_Modifications:
+    - target: {fileID: 4850181024277119658, guid: 430a4ebf3ec5e574b9c2daeb6d3e1a5b, type: 3}
+      propertyPath: <Stat>k__BackingField.<Bullet>k__BackingField
+      value: 
+      objectReference: {fileID: 5143893616387450327, guid: b78fc996dfa480d44a9662accf111ace, type: 3}
     - target: {fileID: 4850181024277119660, guid: 430a4ebf3ec5e574b9c2daeb6d3e1a5b, type: 3}
       propertyPath: m_Name
       value: Gun
@@ -281,8 +319,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 430a4ebf3ec5e574b9c2daeb6d3e1a5b, type: 3}
+--- !u!114 &2747735439246784749 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2177157234536277306, guid: 430a4ebf3ec5e574b9c2daeb6d3e1a5b, type: 3}
+  m_PrefabInstance: {fileID: 4041763145498926551}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a860731a7955e040bc9950c300904bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8887985647396740986 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4850181024277119661, guid: 430a4ebf3ec5e574b9c2daeb6d3e1a5b, type: 3}
+  m_PrefabInstance: {fileID: 4041763145498926551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8887985648432468463 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4850181025045466168, guid: 430a4ebf3ec5e574b9c2daeb6d3e1a5b, type: 3}
   m_PrefabInstance: {fileID: 4041763145498926551}
   m_PrefabAsset: {fileID: 0}

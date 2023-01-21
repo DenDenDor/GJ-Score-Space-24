@@ -2,21 +2,21 @@ using System.Collections;
 using System;
 using UnityEngine;
 
-public class Health 
+public class Health : IHealth
 {
-    private float _health;
+    private float _currentHealth;
 
-    public float CurrentHealth { get => _health; private set => _health = value; }
+    public float CurrentHealth { get => _currentHealth; private set => _currentHealth = value; }
     public float MaxHealth { get; private set; }
     public event Action OnChangeHealth;
     public Health(float health)
     {
         MaxHealth = health;
-        _health = health;
+        _currentHealth = health;
     }
     public void ApplyDamage(IReturnerHealth returnerHealth)
     {
-        _health = returnerHealth.ReturnHealth(_health);
+        _currentHealth = returnerHealth.ReturnHealth(_currentHealth);
         OnChangeHealth?.Invoke();
     }
 }

@@ -6,30 +6,22 @@ using System.Threading;
 public class RechargeShooting : IAttack
 {
     private readonly int _fireRate;
-    private bool _isCoolDown = true;
     private readonly IAttack _attack;
+    private readonly Recharger _recharger;
     public RechargeShooting(int fireRate, IAttack attack)
     {
         _fireRate = fireRate;
         _attack = attack;
+        _recharger = new Recharger(_fireRate);
     }
 
     public void Attack()
     {
-        if (_isCoolDown)
+        if (_recharger.IsCoolDown)
         {
-            Debug.Log("GEE");
             _attack?.Attack();
-            CoolDown();
+            _recharger.CoolDown();
         }
     }
-    private void CoolDown()
-    {
-        _isCoolDown = false;
-        Timer timer = new Timer(Reload, null, _fireRate, Timeout.Infinite);
-    }
-    private void Reload(object obj)
-    {
-        _isCoolDown = true;
-    }
+
 }

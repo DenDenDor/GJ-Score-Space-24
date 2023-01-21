@@ -10,10 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4850181024277119661}
   - component: {fileID: 4850181024277119657}
-  - component: {fileID: 4850181024277119656}
-  - component: {fileID: 4850181024277119663}
-  - component: {fileID: 4850181024277119658}
-  - component: {fileID: 4850181024277119662}
+  - component: {fileID: 2177157234536277306}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -89,19 +86,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4850181024277119656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4850181024277119660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ed8a67ca4cd9e44a2d12b66c1ff8ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4850181024277119663
+--- !u!114 &2177157234536277306
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,37 +100,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Stat>k__BackingField:
     <Offset>k__BackingField: -90
---- !u!114 &4850181024277119658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4850181024277119660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab9f458d155580f4d89ee07510eb4795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Stat>k__BackingField:
-    <Bullet>k__BackingField: {fileID: 5143893616387450327, guid: b78fc996dfa480d44a9662accf111ace, type: 3}
-    <FireRate>k__BackingField: 600
-    <ShootPoint>k__BackingField: {fileID: 4850181025045466168}
---- !u!114 &4850181024277119662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4850181024277119660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 724f333910fd41c40a855b1a3f107d6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gun: {fileID: 4850181024277119656}
-  _getterRotation: {fileID: 4850181024277119663}
-  _getterShooting: {fileID: 4850181024277119658}
 --- !u!1 &4850181025045466175
 GameObject:
   m_ObjectHideFlags: 0

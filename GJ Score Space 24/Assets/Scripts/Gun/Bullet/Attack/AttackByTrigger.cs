@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MiddleAttack : IAttack
+public class AttackByTrigger : IAttack
 {
     private IHavingHealth _havingHealth;
     private IReturnerHealth _returnerHealth;
-    public MiddleAttack(IHavingHealth havingHealth, IReturnerHealth returnerHealth)
+    public AttackByTrigger(IHavingHealth havingHealth, IReturnerHealth returnerHealth)
     {
         _havingHealth = havingHealth;
         _returnerHealth = returnerHealth;
