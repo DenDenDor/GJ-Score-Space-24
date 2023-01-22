@@ -139,6 +139,9 @@ MonoBehaviour:
   <Stat>k__BackingField:
     <Speed>k__BackingField: 4
     <Rigidbody2D>k__BackingField: {fileID: 8887985647164746131}
+  <CharacteristicChangeLimitsStat>k__BackingField:
+    <MaximumValueOfStat>k__BackingField: 10
+    <MinumnumValueOfStat>k__BackingField: 1
 --- !u!114 &8887985647164746130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,6 +251,9 @@ MonoBehaviour:
     <FireRate>k__BackingField: 600
     <ShootPoint>k__BackingField: {fileID: 8887985648432468463}
     <Gun>k__BackingField: {fileID: 8887985647396740986}
+  <CharacteristicChangeLimitsStat>k__BackingField:
+    <MaximumValueOfStat>k__BackingField: 1500
+    <MinumnumValueOfStat>k__BackingField: 100
 --- !u!114 &7380532261143007391
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ public class GunShooting : IAttack
     private readonly Bullet _bullet;
     private readonly Transform _shootPoint;
     private Transform _rotationPoint;
-    private readonly float _offset = 90;
+    private readonly float _offset;
     public GunShooting(Bullet bullet,Transform shootPoint, Transform rotationPoint)
     {
         _bullet = bullet;
